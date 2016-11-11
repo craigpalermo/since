@@ -1,10 +1,8 @@
 const moment = require('moment');
 const _ = require('lodash');
 
-const Since = class Since {
+class Since {
   constructor(input) {
-    this.input = input;
-
     const daysSince = _.flow(
       this.parseInput,
       this.getSecondsSince,
@@ -18,7 +16,7 @@ const Since = class Since {
   /**
   * Converts string input to moment object
   */
-  parseInput(input) {
+  static parseInput(input) {
     let result = null;
 
     const match = input.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})$/);
@@ -34,7 +32,7 @@ const Since = class Since {
   /**
   * Returns number of seconds that have elapsed between input and now
   */
-  getSecondsSince(input) {
+  static getSecondsSince(input) {
     if (!moment.isMoment(input)) {
       return null;
     }
@@ -44,12 +42,12 @@ const Since = class Since {
   /**
   * Converts seconds to days
   */
-  secondsToDays(seconds) {
+  static secondsToDays(seconds) {
     if (!isNaN(seconds)) {
       return seconds / (60 * 60 * 24);
     }
     return null;
   }
-};
+}
 
 export default Since;

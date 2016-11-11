@@ -3,7 +3,7 @@
 import Since from './since';
 import { argv } from 'yargs';
 
-// Get command line args
+// Get input string from command line
 const dateInput = argv._[0];
 
 // Do nothing if no input provided

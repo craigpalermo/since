@@ -2,11 +2,7 @@
   "name": "since",
   "version": "1.0.0",
   "description": "Calculate how many days it's been since ___?",
-  "main": "./index.js",
-  "preferGlobal": true,
-  "bin": {
-    "since": "./index.js"
-  },
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
