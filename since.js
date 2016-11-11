@@ -1,10 +1,5 @@
-const argv = require('yargs').argv;
 const moment = require('moment');
 const _ = require('lodash');
-
-// Get command line args
-const dateInput = argv._[0];
-console.log(dateInput);
 
 const Since = class Since {
   constructor(input) {
@@ -55,13 +50,6 @@ const Since = class Since {
     }
     return null;
   }
-}
+};
 
-// Do nothing if no input provided
-if (!dateInput) {
-  console.log("No input provided.");
-  return;
-}
-
-// Create new Since, which prints result to console
-const mySince = new Since(dateInput);
+export default Since;
