@@ -61,6 +61,7 @@ var Since = function () {
   }, {
     key: 'secondsToDays',
     value: function secondsToDays(seconds) {
+      console.log('hello world');
       if (!isNaN(seconds)) {
         return seconds / (60 * 60 * 24);
       }
