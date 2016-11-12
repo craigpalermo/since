@@ -16,7 +16,7 @@ class Since {
   /**
   * Converts string input to moment object
   */
-  static parseInput(input) {
+  parseInput(input) {
     let result = null;
 
     const match = input.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2}|\d{4})$/);
@@ -32,7 +32,7 @@ class Since {
   /**
   * Returns number of seconds that have elapsed between input and now
   */
-  static getSecondsSince(input) {
+  getSecondsSince(input) {
     if (!moment.isMoment(input)) {
       return null;
     }
@@ -42,7 +42,7 @@ class Since {
   /**
   * Converts seconds to days
   */
-  static secondsToDays(seconds) {
+  secondsToDays(seconds) {
     if (!isNaN(seconds)) {
       return seconds / (60 * 60 * 24);
     }
