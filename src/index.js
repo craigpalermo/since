@@ -9,11 +9,12 @@ const dateInput = argv._[0];
 // Do nothing if no input provided
 if (!dateInput) {
   if (argv.help) {
-    console.log(`Try entering a date in the format "MM-DD-YYYY".`);
+    // TODO
   } else {
-    console.log("No input provided.");
+    console.log(`Try entering a date in the format "MM-DD-YYYY".`);
   }
 } else {
   // Create new Since, which prints result to console
-  new Since(dateInput);
+  const mySince = new Since(dateInput);
+  console.log(mySince.toString(), '\n');
 }
