@@ -1,6 +1,6 @@
 {
-  "name": "since",
-  "version": "0.1.0",
+  "name": "@unscsprt/since",
+  "version": "0.0.1",
   "description": "Calculate how long it's been since ___?",
   "main": "./lib/index.js",
   "scripts": {
