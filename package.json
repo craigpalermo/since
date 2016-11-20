@@ -1,6 +1,6 @@
 {
   "name": "@unscsprt/since",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Calculate how long it's been since ___?",
   "main": "./lib/index.js",
   "scripts": {
@@ -12,8 +12,8 @@
     "since": "bin/index.js"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/unscsprt/since"
+    "type": "git",
+    "url": "https://github.com/unscsprt/since"
   },
   "author": "Craig Palermo",
   "license": "ISC",
