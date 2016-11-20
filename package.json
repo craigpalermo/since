@@ -1,12 +1,13 @@
 {
   "name": "since",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Calculate how long it's been since ___?",
-  "main": "./src/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "gulp"
   },
+  "preferGlobal": true,
   "bin": {
     "since": "bin/index.js"
   },
