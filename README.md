@@ -1,5 +1,5 @@
 # since
-Calculate time elapsed since ___?
+Calculate number of days since a past date.
 
 ## Installation
 ```
@@ -8,7 +8,8 @@ npm install -g @unscsprt/since
 
 ## Usage
 ```
-since "<input>"```
+since "<input>"
+```
 
 Supported formats for `<input>`
 include:

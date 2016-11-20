@@ -11,6 +11,10 @@
   "bin": {
     "since": "bin/index.js"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/unscsprt/since"
+  },
   "author": "Craig Palermo",
   "license": "ISC",
   "dependencies": {
