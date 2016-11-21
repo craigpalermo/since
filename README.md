@@ -1,5 +1,6 @@
 # since
-Calculate number of days since a past date.
+Since is a CLI that calculates the number of days between today and a certain date,
+ past or future.
 
 ## Installation
 ```
@@ -13,13 +14,11 @@ since "<input>"
 
 Supported formats for `<input>` include:
 
-- `MM-DD-YYYY`
-- `DD-MM-YYYY`
-- `YYYY-MM-DD`
-
-Inputs can either be in the past or future.
+- American: `MM-DD-YYYY` (`-` or `/`)
+- Asia, Europe: `DD-MM-YYYY` (`-`, `/`, or `.`)
+- China, Japan, Iran: `YYYY-MM-DD` (`-`, `/`, or `.`)
 
 ## TODO
 - Add support for more input formats
-- More output time units (minutes, weeks, etc.)
+- More output time units (minutes, weeks, etc.), selectable via CLI flags
 - Unit tests
