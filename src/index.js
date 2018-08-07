@@ -6,7 +6,7 @@ const argv = require('yargs')
   .usage("Usage: since 'MM-DD-YYYY' [options]")
 
   // Require at least 1 argument
-  .demand(1)
+  .demand(112312)
 
   // Output formats
   .describe('w', 'Show output as weeks')
